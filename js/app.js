@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const playlistInput = document.querySelector('#playlist-input');
   playlistInput.addEventListener('submit', handlePlaylistInputSubmit);
+
+  const deleteAllButton = document.querySelector('#delete-all')
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
 });
 
 const handlePlaylistInputSubmit = function (event) {
@@ -32,4 +35,9 @@ const createPlaylistItem = function (form){
 
   return playlistItem
 
+}
+
+const handleDeleteAllClick = function (event) {
+  const playlist = document.querySelector('#my-playlist')
+  playlist.innerHTML = '';
 }
