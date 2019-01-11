@@ -7,16 +7,41 @@
     <script src="js/app.js"></script>
   </head>
     <body>
+      <form id="artist-input">
+        <div id="form-wrapper">
+          <div class="form-item">
+            <label for="artist" class="primary">Artist Name:</label>
+            <input type="text" id="artist" placeholder="Please input artist name" required/>
+        </div>
 
+        <div class="form-item">
+          <label for="title" class="primary">Title:</label>
+          <input type="text" id="title" placeholder="Please input song title" required/>
+        </div>
 
+        <div class="form-item">
+          <label for="genre" class="primary">Genre:</label>
+            <select type="select" id="genre-select">
+              <option value=""disable selected>Please select genre</option>
+              <option value="Acoustic">Acoustic</option>
+              <option value="Blues">Blues</option>
+              <option value="Folk">Folk</option>
+              <option value="Grime">Grime</option>
+              <option value="House">House</option>
+              <option value="Indie">Indie</option>
+              <option value="Pop">Pop</option>
+              <option value="RnB">RnB</option>
+              <option value="Rock">Rock</option>
+              <option value="UK Garage">UK Garage</option>
+            </select>
+          </div>
+        </div>
+      <input type="submit" value="save"/>
+      </form>
 
+      <button id="delete-all">Delete all</button>
 
-
-
-
-
-
-
-      
+      <h1>My Playlist</h1>
+      <div id="my-plylist"></div>
     </body>
 </html>
