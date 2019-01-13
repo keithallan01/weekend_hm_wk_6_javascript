@@ -18,7 +18,7 @@ const handlePlaylistInputSubmit = function (event) {
 }
 
 const createPlaylistItem = function (form){
-  const playlistItem = document.createElement('li')
+  const playlistItem = document.createElement('div')
   playlistItem.classList.add('playlist-item');
 
   const artist = document.createElement('h2')
